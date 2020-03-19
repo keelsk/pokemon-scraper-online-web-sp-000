@@ -25,11 +25,11 @@ class Pokemon
       FROM pokemon
       WHERE id = ?
     SQL
-    
+    binding.pry    
     db.execute(sql, id).map do |row|
       self.create(row, db)
     end.first
-    binding.pry
+
   end
   
   def self.create(row, db)
