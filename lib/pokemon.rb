@@ -28,7 +28,7 @@ class Pokemon
     
     db.execute(sql, id).map do |row|
       self.create(row, db)
-    end
+    end.first
   end
   
   def self.create(row, db)
