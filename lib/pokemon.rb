@@ -26,7 +26,7 @@ class Pokemon
     SQL
     
     db.execute(sql, id).map do |row|
-      self.new_from_db(row)
+      self.create(row)
     end
   end
   
