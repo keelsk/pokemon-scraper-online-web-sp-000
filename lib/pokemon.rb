@@ -35,7 +35,6 @@ class Pokemon
     pokemon = self.new(name: row[1], type: row[2], db: db)
     pokemon.id = row[0]
     pokemon
-    binding.pry
   end
   
 
